@@ -39,7 +39,7 @@ app.get("/", (req, res) => {
 app.use('/api/projets',routerProjet );
 app.use('/api/auth',routeUser );
 
-app.listen(PORT , () => {
+app.listen(PORT || 5001 , () => {
     console.log(`Le serveur a démarré au port ${PORT}`)
 })
 
