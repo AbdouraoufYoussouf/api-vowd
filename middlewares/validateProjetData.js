@@ -3,7 +3,7 @@ import { body } from 'express-validator'
 // Middleware de validation pour la création de projet
 
 // Expressions régulières
-const matchSociety = /^[a-zA-Zéèêîàçôïùû0à-9]+(?:['-\s][a-zA-Zéèêîàçôïùû0à-9]+)*$/
+const matchSociety = /^[a-zA-Zéèêîàçôïùûà0-9]+(?:['-\s][a-zA-Zéèêîàçôïùûà0-9]+)*$/
 const errorSociety = 'Le nom de la société ne peut contenir que des lettres et chiffres, un seul espace entre les mots, une seule apostrophe entre les mots et un seul tiret entre les mots. Ce champ doit commencer par une lettre ou un chiffre. 3 à 30 caractères sont autorisés.'
 
 const matchSiret = /^[0-9{14,14}]+$/

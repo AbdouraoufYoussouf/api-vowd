@@ -36,8 +36,8 @@ app.get("/", (req, res) => {
     res.send("Bonjour Tout le monde , vous êtes sur l'api de Vowd");
   });
 
-// app.use('/api/projets',routerProjet );
-// app.use('/api/auth',routeUser );
+app.use('/api/projets',routerProjet );
+app.use('/api/auth',routeUser );
 
 app.listen(PORT || 5001 , () => {
     console.log(`Le serveur a démarré au port ${PORT}`)
