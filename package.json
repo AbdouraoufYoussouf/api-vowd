@@ -4,9 +4,6 @@
   "description": "",
   "main": "server.js",
   "type": "module",
-  "engines": {
-    "node": "18.x"
-  },
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
@@ -14,7 +11,7 @@
     "delete": "node ./config/deleteData.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Abdouraouf Youssouf",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
